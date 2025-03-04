@@ -10,14 +10,14 @@ namespace Vidly1.Controllers
     public class CustomersController : Controller
     {
         // GET: Customers
-        public ViewResult Index()
+        public ViewResult Index() //concrete class
         {
             var customers = GetCustomers();
 
             return View(customers);
         }
 
-        public ActionResult Details(int id)
+        public ActionResult Details(int id) //abstract class
         {
             var customer = GetCustomers().SingleOrDefault(c => c.Id == id);
 
