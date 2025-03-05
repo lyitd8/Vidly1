@@ -18,14 +18,14 @@ namespace Vidly1.Controllers
         }
         public ViewResult Index()
         {
-            var movies = _context.Movies.Include(c => c.Genre).ToList();
+            var movies = _context.Movies.Include(m => m.Genre).ToList();
 
             return View(movies);
         }        
 
         public ActionResult Details(int id)  //localhost:5262/Movies/Details/1
         {
-            var movies = _context.Movies.Include(c => c.Genre)
+            var movies = _context.Movies.Include(m => m.Genre)
                 .SingleOrDefault(c => c.Id == id);
 
             if (movies == null)

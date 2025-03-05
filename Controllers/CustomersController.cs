@@ -22,17 +22,22 @@ namespace Vidly1.Controllers
             _context.Dispose();
         }
 
+        public ActionResult New()
+        {
+            return View();
+        }
+
         // GET: Customers
         public ViewResult Index() //concrete class
         {
-            var customers = _context.Customers.Include(c => c.MembershipType).ToList();
+            var customers = _context.Customers.Include(m => m.MembershipType).ToList();
 
             return View(customers);
         }
 
         public ActionResult Details(int id) //abstract class
         {
-            var customer = _context.Customers.Include(c => c.MembershipType).SingleOrDefault(c => c.Id == id);
+            var customer = _context.Customers.Include(m => m.MembershipType).SingleOrDefault(c => c.Id == id);
 
             if (customer == null)
                 return HttpNotFound();
