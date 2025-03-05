@@ -185,9 +185,17 @@
     <Compile Include="Migrations\202503040902031_PopulateMovies.Designer.cs">
       <DependentUpon>202503040902031_PopulateMovies.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\202503050157177_UpdateCustomer.cs" />
+    <Compile Include="Migrations\202503050157177_UpdateCustomer.Designer.cs">
+      <DependentUpon>202503050157177_UpdateCustomer.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202503050234491_RenameGenreColumn.cs" />
+    <Compile Include="Migrations\202503050234491_RenameGenreColumn.Designer.cs">
+      <DependentUpon>202503050234491_RenameGenreColumn.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\ApplicationDbContext.cs" />
-    <Compile Include="Models\Genres.cs" />
+    <Compile Include="Models\Genre.cs" />
     <Compile Include="Models\Customer.cs" />
     <Compile Include="Models\MembershipType.cs" />
     <Compile Include="Models\Movie.cs" />
@@ -246,11 +254,11 @@
     <Content Include="Views\Home\About.cshtml" />
     <Content Include="Views\Home\Contact.cshtml" />
     <Content Include="Views\Home\Index.cshtml" />
-    <Content Include="Views\Movies\Random.cshtml" />
     <Content Include="Views\Shared\_NavBar.cshtml" />
     <Content Include="Views\Customers\Details.cshtml" />
     <Content Include="Views\Customers\Index.cshtml" />
     <Content Include="Views\Movies\Index.cshtml" />
+    <Content Include="Views\Movies\Details.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
@@ -321,6 +329,12 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\202503040902031_PopulateMovies.resx">
       <DependentUpon>202503040902031_PopulateMovies.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202503050157177_UpdateCustomer.resx">
+      <DependentUpon>202503050157177_UpdateCustomer.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202503050234491_RenameGenreColumn.resx">
+      <DependentUpon>202503050234491_RenameGenreColumn.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>
