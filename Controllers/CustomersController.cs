@@ -12,7 +12,7 @@ namespace Vidly1.Controllers
 {
     public class CustomersController : Controller
     {
-        private ApplicationDbContext _context;
+        private ApplicationDbContext _context; //create a DB instance
 
         public CustomersController()
         {
