@@ -10,7 +10,7 @@ namespace Vidly1.Models
 	{
 		public int Id { get; set; }
 
-        [Required]
+        [Required(ErrorMessage ="Customer Name is required.")]
         [StringLength(255)]
         public string Name { get; set; }
 

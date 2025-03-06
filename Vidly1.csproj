@@ -201,6 +201,10 @@
     <Compile Include="Migrations\202503050858447_AddGenreNameToMovie.Designer.cs">
       <DependentUpon>202503050858447_AddGenreNameToMovie.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\202503060143589_RemoveNumberInStockInGenre.cs" />
+    <Compile Include="Migrations\202503060143589_RemoveNumberInStockInGenre.Designer.cs">
+      <DependentUpon>202503060143589_RemoveNumberInStockInGenre.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\ApplicationDbContext.cs" />
     <Compile Include="Models\Genre.cs" />
@@ -353,6 +357,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\202503050858447_AddGenreNameToMovie.resx">
       <DependentUpon>202503050858447_AddGenreNameToMovie.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202503060143589_RemoveNumberInStockInGenre.resx">
+      <DependentUpon>202503060143589_RemoveNumberInStockInGenre.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>
