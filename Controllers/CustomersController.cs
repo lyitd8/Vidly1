@@ -6,6 +6,7 @@ using System.Web.Mvc;
 using Vidly1.Models;
 using System.Data.Entity;
 using Vidly1.ViewModels;
+using System.Data.Entity.Validation;
 
 namespace Vidly1.Controllers
 {
@@ -29,6 +30,7 @@ namespace Vidly1.Controllers
 
             var viewModel = new CustomerFormViewModel
             {
+                Customer = new Customer(),
                 MembershipTypes = membershipTypes
             };
             
@@ -57,8 +59,14 @@ namespace Vidly1.Controllers
                 customerInDb.MembershipTypeId = customer.MembershipTypeId;
                 customerInDb.IsSubscribedToNewsletter = customer.IsSubscribedToNewsletter;
             }
-                
-            _context.SaveChanges();
+            try
+            {
+                _context.SaveChanges();
+            }catch(DbEntityValidationException e)
+            {
+                Console.WriteLine(e);
+            }
+            
 
             return RedirectToAction("Index", "Customers");
         }

@@ -205,6 +205,10 @@
     <Compile Include="Migrations\202503060143589_RemoveNumberInStockInGenre.Designer.cs">
       <DependentUpon>202503060143589_RemoveNumberInStockInGenre.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\202503060313497_UpdateMembershipType.cs" />
+    <Compile Include="Migrations\202503060313497_UpdateMembershipType.Designer.cs">
+      <DependentUpon>202503060313497_UpdateMembershipType.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\ApplicationDbContext.cs" />
     <Compile Include="Models\Genre.cs" />
@@ -361,6 +365,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\202503060143589_RemoveNumberInStockInGenre.resx">
       <DependentUpon>202503060143589_RemoveNumberInStockInGenre.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202503060313497_UpdateMembershipType.resx">
+      <DependentUpon>202503060313497_UpdateMembershipType.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>
