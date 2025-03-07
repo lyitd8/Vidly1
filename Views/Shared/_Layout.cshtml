@@ -17,8 +17,17 @@
         </footer>
     </div>
 
-    @Scripts.Render("~/bundles/jquery")
-    @Scripts.Render("~/bundles/bootstrap")
+    <script src="~/Scripts/jquery-3.7.0.js"></script>
+        <script src="~/Scripts/bootstrap.js"></script>
+        <script src="~/Scripts/bootbox.js"></script>
+        <script src="~/Scripts/respond.js"></script>
+        <script src="~/Scripts/DataTables/jquery.dataTables.js"></script>
+        <script src="~/Scripts/DataTables/dataTables.bootstrap.js"></script>
+
+    @*@Scripts.Render("~/bundles/lib")*@
+
+    @*@System.Web.Optimization.Scripts.Render("~/bundles/lib")*@
+
 
     @Scripts.Render("~/bundles/jqueryval")
 
