@@ -91,9 +91,9 @@ namespace Vidly1.Controllers
         // GET: Customers
         public ViewResult Index() //concrete class
         {
-            var customers = _context.Customers.Include(m => m.MembershipType).ToList();
+            //var customers = _context.Customers.Include(m => m.MembershipType).ToList();
 
-            return View(customers);
+            return View();
         }
 
         public ActionResult Details(int id) //abstract class
