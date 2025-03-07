@@ -1,11 +1,9 @@
 ﻿using System;
-using System.Collections.Generic;
+using System.Data.Entity;
 using System.Linq;
-using System.Web;
 using System.Web.Mvc;
 using Vidly1.Models;
 using Vidly1.ViewModels;
-using System.Data.Entity;
 
 namespace Vidly1.Controllers
 {
@@ -27,8 +25,8 @@ namespace Vidly1.Controllers
             var movies = _context.Movies.Include(m => m.Genre).ToList();
 
             return View(movies);
-        }     
-        
+        }
+
         public ViewResult New()
         {
             var genres = _context.Genres.ToList();
@@ -116,6 +114,6 @@ namespace Vidly1.Controllers
             return View(movies);
         }
 
-        
+
     }
 }

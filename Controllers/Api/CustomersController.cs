@@ -1,6 +1,5 @@
 ﻿using AutoMapper;
 using System;
-using System.Collections.Generic;
 using System.Linq;
 using System.Net;
 using System.Web.Http;
@@ -21,11 +20,11 @@ namespace Vidly1.Controllers.Api
         // GET /api/customers
         public IHttpActionResult GetCustomers()
         {
-            var customers = _context.Customers
+            var customerDtos = _context.Customers
                 .ToList()
                 .Select(Mapper.Map<Customer, CustomerDto>);
 
-            return Ok(customers);
+            return Ok(customerDtos);
         }
 
         // GET /api/customers/1
@@ -67,11 +66,11 @@ namespace Vidly1.Controllers.Api
             if (customerInDb == null)
                 return NotFound();
 
-            Mapper.Map(customerDto, customerInDb);           
+            Mapper.Map(customerDto, customerInDb);
 
             _context.SaveChanges();
 
-            return StatusCode(HttpStatusCode.NoContent);
+            return Ok();
         }
 
         // DELETE /api/customers/1
