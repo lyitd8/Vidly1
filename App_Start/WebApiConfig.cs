@@ -12,7 +12,7 @@ namespace Vidly1.App_Start
 	{
         public static void Register(HttpConfiguration config)
         {
-            var settings = config.Formatters.JsonFormatter.SerializerSettings;
+            var settings = config.Formatters.JsonFormatter.SerializerSettings; //setting for camelCase
             settings.ContractResolver = new CamelCasePropertyNamesContractResolver();
             settings.Formatting = Formatting.Indented;
             

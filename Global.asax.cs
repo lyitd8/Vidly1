@@ -11,7 +11,7 @@ using AutoMapper;
 
 namespace Vidly1
 {
-    public class MvcApplication : System.Web.HttpApplication
+    public class MvcApplication : HttpApplication
     {
         protected void Application_Start()
         {
