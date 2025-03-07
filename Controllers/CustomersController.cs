@@ -87,8 +87,7 @@ namespace Vidly1.Controllers
 
             return View("CustomerForm", viewModel); //nameOfView, viewModel instance
         }
-
-        // GET: Customers
+       
         public ViewResult Index() //concrete class
         {
             //var customers = _context.Customers.Include(m => m.MembershipType).ToList();
