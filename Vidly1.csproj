@@ -250,37 +250,13 @@
     <Compile Include="Migrations\202503040821582_AddGenres.Designer.cs">
       <DependentUpon>202503040821582_AddGenres.cs</DependentUpon>
     </Compile>
-    <Compile Include="Migrations\202503040853508_PopulateGenres.cs" />
-    <Compile Include="Migrations\202503040853508_PopulateGenres.Designer.cs">
-      <DependentUpon>202503040853508_PopulateGenres.cs</DependentUpon>
+    <Compile Include="Migrations\202503100229327_AddIdentityModels.cs" />
+    <Compile Include="Migrations\202503100229327_AddIdentityModels.Designer.cs">
+      <DependentUpon>202503100229327_AddIdentityModels.cs</DependentUpon>
     </Compile>
-    <Compile Include="Migrations\202503040902031_PopulateMovies.cs" />
-    <Compile Include="Migrations\202503040902031_PopulateMovies.Designer.cs">
-      <DependentUpon>202503040902031_PopulateMovies.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Migrations\202503050157177_UpdateCustomer.cs" />
-    <Compile Include="Migrations\202503050157177_UpdateCustomer.Designer.cs">
-      <DependentUpon>202503050157177_UpdateCustomer.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Migrations\202503050234491_RenameGenreColumn.cs" />
-    <Compile Include="Migrations\202503050234491_RenameGenreColumn.Designer.cs">
-      <DependentUpon>202503050234491_RenameGenreColumn.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Migrations\202503050828471_AddReleaseDateAndDateAddedToMovies.cs" />
-    <Compile Include="Migrations\202503050828471_AddReleaseDateAndDateAddedToMovies.Designer.cs">
-      <DependentUpon>202503050828471_AddReleaseDateAndDateAddedToMovies.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Migrations\202503050858447_AddGenreNameToMovie.cs" />
-    <Compile Include="Migrations\202503050858447_AddGenreNameToMovie.Designer.cs">
-      <DependentUpon>202503050858447_AddGenreNameToMovie.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Migrations\202503060143589_RemoveNumberInStockInGenre.cs" />
-    <Compile Include="Migrations\202503060143589_RemoveNumberInStockInGenre.Designer.cs">
-      <DependentUpon>202503060143589_RemoveNumberInStockInGenre.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Migrations\202503060313497_UpdateMembershipType.cs" />
-    <Compile Include="Migrations\202503060313497_UpdateMembershipType.Designer.cs">
-      <DependentUpon>202503060313497_UpdateMembershipType.cs</DependentUpon>
+    <Compile Include="Migrations\202503100348153_SeedUsers.cs" />
+    <Compile Include="Migrations\202503100348153_SeedUsers.Designer.cs">
+      <DependentUpon>202503100348153_SeedUsers.cs</DependentUpon>
     </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\AccountViewModels.cs" />
@@ -545,10 +521,10 @@
     <Content Include="Views\Manage\VerifyPhoneNumber.cshtml" />
     <Content Include="Views\Shared\Lockout.cshtml" />
     <Content Include="Views\Shared\_LoginPartial.cshtml" />
+    <Content Include="Views\Account\Register.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
-    <Folder Include="Views\Account\" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="Content\bootstrap.rtl.min.css.map" />
@@ -611,29 +587,11 @@
     <EmbeddedResource Include="Migrations\202503040821582_AddGenres.resx">
       <DependentUpon>202503040821582_AddGenres.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\202503040853508_PopulateGenres.resx">
-      <DependentUpon>202503040853508_PopulateGenres.cs</DependentUpon>
+    <EmbeddedResource Include="Migrations\202503100229327_AddIdentityModels.resx">
+      <DependentUpon>202503100229327_AddIdentityModels.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\202503040902031_PopulateMovies.resx">
-      <DependentUpon>202503040902031_PopulateMovies.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\202503050157177_UpdateCustomer.resx">
-      <DependentUpon>202503050157177_UpdateCustomer.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\202503050234491_RenameGenreColumn.resx">
-      <DependentUpon>202503050234491_RenameGenreColumn.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\202503050828471_AddReleaseDateAndDateAddedToMovies.resx">
-      <DependentUpon>202503050828471_AddReleaseDateAndDateAddedToMovies.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\202503050858447_AddGenreNameToMovie.resx">
-      <DependentUpon>202503050858447_AddGenreNameToMovie.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\202503060143589_RemoveNumberInStockInGenre.resx">
-      <DependentUpon>202503060143589_RemoveNumberInStockInGenre.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\202503060313497_UpdateMembershipType.resx">
-      <DependentUpon>202503060313497_UpdateMembershipType.cs</DependentUpon>
+    <EmbeddedResource Include="Migrations\202503100348153_SeedUsers.resx">
+      <DependentUpon>202503100348153_SeedUsers.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>

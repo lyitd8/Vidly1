@@ -11,7 +11,7 @@ namespace Vidly1.Models
         public byte Id { get; set; }
 
         [Required]
-        public string Name { get; set; }
+        public string name { get; set; }
 
         public short SignUpFee { get; set; }
 
