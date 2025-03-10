@@ -81,6 +81,7 @@ namespace Vidly1.Models
         public string ConfirmPassword { get; set; }
 
         [Required(ErrorMessage = "The Driving License field is required.")]
+        [Display(Name = "Driving License")]
         public string DrivingLicense { get; set; }
 
         [Required(ErrorMessage = "The Phone field is required.")]
